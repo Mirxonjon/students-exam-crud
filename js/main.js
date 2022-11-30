@@ -51,10 +51,10 @@ const renderStudent = function(student) {
 
   studentRow.querySelector(".student-marked-date").textContent = showDate(markedDate);
 
-  const markPercent = Math.round(mark * TOTAL_MARK_PERCENT / TOTAL_MARK);
+  const markPercent = Math.round(mark);
   // const studentMark = studentRow.querySelector(".student-mark");
   // studentMark.textContent = markPercent + "%"
-  studentRow.querySelector(".student-mark").textContent = markPercent + "%";
+  studentRow.querySelector(".student-mark").textContent = markPercent + "$";
 
 
   const studentPassBadge = studentRow.querySelector(".student-pass-status");

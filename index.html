@@ -5,21 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zurumbia</title>
+  <title>Travel</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="https://kit.fontawesome.com/1a052ad93a.js" crossorigin="anonymous"></script> 
 </head>
 
 <body>
+
+
   <div class="container my-5">
     <div class="d-flex justify-content-between">
-      <h1 class="h2">Exam results</h1>
+      <h1 class="h2">Travel </h1>
 
       <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#add-student-modal">
-        <span class="me-2">Add new student</span>
+        <span class="me-2">Qoshish</span>
         <i class="fa-solid fa-plus"></i>
       </button>
     </div>
+
+
+    <nav aria-label="...">
+      <ul class="pagination pagination-lg">
+        <li class="page-item active" aria-current="page">
+          <span class="page-link">Asosiy</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">Users</a></li>
+        <li class="page-item"><a class="page-link" href="#">Users</a></li>
+      </ul>
+    </nav>
 
     <div class="row mt-5">
       <div class="col-3">
@@ -44,9 +57,9 @@
             <label for="sortby" class="form-label">Sort by</label>
             <select class="form-select" id="sortby">
               <option value="1">Name</option>
-              <option value="2">Mark: to lowest</option>
-              <option value="3">Mark: to highest</option>
-              <option value="4">Marked date</option>
+              <option value="2">price: to lowest</option>
+              <option value="3">price: to highest</option>
+              <option value="4">price date</option>
             </select>
           </div>
 
@@ -56,7 +69,7 @@
 
       <section class="col-9">
         <div class="d-flex justify-content-between align-items-baseline">
-          <h2 class="h4 mb-4">Students list</h2>
+          <h2 class="h4 mb-4">Davlatlar ro'yhati</h2>
           <p class="count">Count: 4</p>
         </div>
         <p class="text-end">Average mark: 65%</p>
@@ -65,9 +78,9 @@
           <thead class="align-middle">
             <tr>
               <th class="text-center">ID</th>
-              <th>Name & Lastname</th>
-              <th>Marked date</th>
-              <th class="text-center">Mark</th>
+              <th>Name & City</th>
+              <th> data</th>
+              <th class="text-center">price</th>
               <th class="text-center">Status</th>
               <th class="text-center">Edit</th>
               <th class="text-center">Delete</th>
@@ -86,7 +99,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="addStudentModalLabel">Add student</h5>
+          <h5 class="modal-title" id="addStudentModalLabel">Qo'shish</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -96,14 +109,14 @@
               <input type="text" class="form-control" id="name" required placeholder="Falonchi">
             </div>
             <div class="mb-3">
-              <label for="lastname" class="form-label">Lastname</label>
+              <label for="lastname" class="form-label">city</label>
               <input type="text" class="form-control" id="lastname" required placeholder="Pismadonchi">
             </div>
             <div class="mb-3">
-              <label for="mark" class="form-label">Mark</label>
+              <label for="mark" class="form-label">price</label>
               <input type="number" min="0" max="150" class="form-control" id="mark" required placeholder="150">
             </div>
-            <button type="submit" class="btn btn-primary d-block w-100 p-2">Add student</button>
+            <button type="submit" class="btn btn-primary d-block w-100 p-2">Add country</button>
           </form>
         </div>
       </div>
@@ -115,7 +128,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="editStudentModalLabel">Edit student</h5>
+          <h5 class="modal-title" id="editStudentModalLabel">O'zgartirish</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -125,18 +138,29 @@
               <input type="text" class="form-control" id="edit-name" required placeholder="Falonchi">
             </div>
             <div class="mb-3">
-              <label for="lastname" class="form-label">Lastname</label>
+              <label for="lastname" class="form-label">city</label>
               <input type="text" class="form-control" id="edit-lastname" required placeholder="Pismadonchi">
             </div>
             <div class="mb-3">
-              <label for="mark" class="form-label">Mark</label>
+              <label for="mark" class="form-label">price</label>
               <input type="number" min="0" max="150" class="form-control" id="edit-mark" required placeholder="150">
             </div>
-            <button type="submit" class="btn btn-primary d-block w-100 p-2">Edit student</button>
+            <button type="submit" class="btn btn-primary d-block w-100 p-2">O'zgartirish</button>
           </form>
         </div>
       </div>
     </div>
+  </div>
+
+
+  <div class="card text-center">
+    
+    <div class="card-body">
+      <h5 class="card-title">Sayyohlik agentligi</h5>
+      <p class="card-text">Biz bilan tezroq</p>
+      <a href="#" class="btn btn-primary"> tarmoqlar</a>
+    </div>
+    
   </div>
 
   <!--  -->
